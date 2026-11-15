@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin — Nurali Kaldybay</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div id="login" class="login" hidden>
+  <div class="card">
+    <h1 style="font-size:1.6rem;margin-bottom:6px">Admin</h1>
+    <p class="meta" style="margin:0 0 18px">Sign in to edit your portfolio.</p>
+    <form id="lf">
+      <div class="f"><label for="em">Email</label><input id="em" type="email" autocomplete="username" required></div>
+      <div class="f"><label for="pw">Password</label><input id="pw" type="password" autocomplete="current-password" required></div>
+      <div class="err" id="lerr"></div>
+      <button class="abtn pri" style="width:100%" id="lbtn">Sign in</button>
+    </form>
+    <p class="meta" style="margin:16px 0 0"><a href="./">← Back to the site</a></p>
+  </div>
+</div>
+<div id="app" hidden>
+  <div class="a-top"><div class="a-wrap"><b>Portfolio admin</b><div class="r"><a class="abtn sm" href="./" target="_blank">View site ↗</a><button class="abtn sm" id="so">Sign out</button></div></div></div>
+  <div class="a-wrap"><div class="tabs" id="tabs"></div><div class="panel" id="panel"></div></div>
+</div>
+<div class="modal" id="modal"><div class="mbox" id="mbox"></div></div>
+<div class="toast" id="toast"></div>
+<script src="vendor/supabase.js"></script>
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>
