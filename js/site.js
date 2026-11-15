@@ -78,7 +78,7 @@ function render(data) {
   const p = s.profile || {}; const sec = s.sections || {};
   applyTheme(s.theme);
   const name = p.name || 'Nurali Kaldybay';
-  document.title = `${name} — portfolio`;
+  document.title = `${name} — student portfolio | Taraz Bilim-Innovation Lyceum`;
   $('#brandName').textContent = name;
   $('#logo').textContent = name.split(/\s+/).map((w) => w[0]).slice(0, 2).join('').toUpperCase();
   const stats = lines(p.stats);
