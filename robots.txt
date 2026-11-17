@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://abk0186.github.io/nurali-preview/sitemap.xml
+Sitemap: https://nurali.asia/sitemap.xml
